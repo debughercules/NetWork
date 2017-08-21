@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E7162CD1F4A1B3D0020D4DA /* NetWorkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7162CC1F4A1B3D0020D4DA /* NetWorkRequest.swift */; };
 		6E9BB7281F49B6D60016B967 /* NetWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E9BB7261F49B6D60016B967 /* NetWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E9BB72F1F49B7150016B967 /* Reachibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9BB72E1F49B7150016B967 /* Reachibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E7162CC1F4A1B3D0020D4DA /* NetWorkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetWorkRequest.swift; path = "Get Requests/NetWorkRequest.swift"; sourceTree = "<group>"; };
 		6E9BB7231F49B6D60016B967 /* NetWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9BB7261F49B6D60016B967 /* NetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
 		6E9BB7271F49B6D60016B967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E9BB72E1F49B7150016B967 /* Reachibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachibility.swift; path = InternetConnectivity/Reachibility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +51,19 @@
 			isa = PBXGroup;
 			children = (
 				6E9BB7261F49B6D60016B967 /* NetWork.h */,
+				6E7162CC1F4A1B3D0020D4DA /* NetWorkRequest.swift */,
+				6E9BB7301F49B71C0016B967 /* InternectConnectivity */,
 				6E9BB7271F49B6D60016B967 /* Info.plist */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		6E9BB7301F49B71C0016B967 /* InternectConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				6E9BB72E1F49B7150016B967 /* Reachibility.swift */,
+			);
+			name = InternectConnectivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,7 @@
 					6E9BB7221F49B6D60016B967 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 45S5U7KJGD;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7162CD1F4A1B3D0020D4DA /* NetWorkRequest.swift in Sources */,
+				6E9BB72F1F49B7150016B967 /* Reachibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +259,7 @@
 		6E9BB72C1F49B6D60016B967 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 45S5U7KJGD;
@@ -254,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.testing.-.NetWork";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +280,7 @@
 		6E9BB72D1F49B6D60016B967 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 45S5U7KJGD;
@@ -296,6 +316,7 @@
 				6E9BB72D1F49B6D60016B967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
